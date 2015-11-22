@@ -6,15 +6,15 @@
         <div>
           <h1>Jekatyerina's blog</h1>
         </div>
-
+{% for post in posts %}
         <div>
                     <p>published: 22.11.2015, 12:10</p>
-                    <h2><a href="">Első posztom</a></h2>
+                    <h2><a href="">{{post.title}}</a></h2>
                     <p>Működik!</p>
                     <p>nagyon ügyesek vagyunk...</p>
                     <p>mi lesz az ebéd? ;)</p>
         </div>
-
+{% endfor %}
         <div>
                     <em>Django Girls Budapest</em>
         </div>
